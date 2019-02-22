@@ -44,7 +44,7 @@
                 </listEvents>
             </sourceDesc>
             <controlaccess><!-- stolen from EAD -->
-                <category name="Person" type="entity" searchable="true">
+                <category name="Person" type="entity" searchable="true" type="real">
                     <instanceCount></instanceCount>
                     <idno type="uri" subtype="vocab">{}</idno>
                     <desc></desc>
