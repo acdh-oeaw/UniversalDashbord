@@ -1,16 +1,32 @@
 {
   "meta": {
     "title": "string",
+    "ID":"redmine ID",
     "uris": {
       "baseUri": "url",
       "query": "url",
       "archive": "url",
       "code": "url",
+      "selfDesc":"url"
     },
-    "Contributors": {
+    "contributors": {
       "metadataAuthor": "",
       "digitized": ""
-    }
+    },
+    "legal":{
+      "images":{
+        "creator":"string",
+        "license":"vocab?"
+      },
+      "text":{
+        "creator":"string",
+        "license":"vocab?"
+      }
+    },
+    "abstract":{},
+    "datatypes":["MIME types", "string", "relational data", "geo"],
+    "producedWith":"string",
+    "relatedServices":"tbd"
   },
   "content": {
     "period": {

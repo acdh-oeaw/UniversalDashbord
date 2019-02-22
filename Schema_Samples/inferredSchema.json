@@ -1,0 +1,657 @@
+1 {
+2   "definitions": {},
+3   "$schema": "http://json-schema.org/draft-07/schema#",
+4   "$id": "http://example.com/root.json",
+5   "type": "object",
+6   "title": "The Root Schema",
+7   "required": [
+8     "meta",
+9     "content"
+10   ],
+11   "properties": {
+12     "meta": {
+13       "$id": "#/properties/meta",
+14       "type": "object",
+15       "title": "The Meta Schema",
+16       "required": [
+17         "title",
+18         "ID",
+19         "uris",
+20         "contributors",
+21         "legal",
+22         "abstract",
+23         "datatypes",
+24         "producedWith"
+25       ],
+26       "properties": {
+27         "title": {
+28           "$id": "#/properties/meta/properties/title",
+29           "type": "string",
+30           "title": "The Title Schema",
+31           "default": "",
+32           "examples": [
+33             "string"
+34           ],
+35           "pattern": "^(.*)$"
+36         },
+37         "ID": {
+38           "$id": "#/properties/meta/properties/ID",
+39           "type": "string",
+40           "title": "The Id Schema",
+41           "default": "",
+42           "examples": [
+43             "redmine ID"
+44           ],
+45           "pattern": "^(.*)$"
+46         },
+47         "uris": {
+48           "$id": "#/properties/meta/properties/uris",
+49           "type": "object",
+50           "title": "The Uris Schema",
+51           "required": [
+52             "baseUri",
+53             "query",
+54             "archive",
+55             "code",
+56             "selfDesc"
+57           ],
+58           "properties": {
+59             "baseUri": {
+60               "$id": "#/properties/meta/properties/uris/properties/baseUri",
+61               "type": "string",
+62               "title": "The Baseuri Schema",
+63               "default": "",
+64               "examples": [
+65                 "url"
+66               ],
+67               "pattern": "^(.*)$"
+68             },
+69             "query": {
+70               "$id": "#/properties/meta/properties/uris/properties/query",
+71               "type": "string",
+72               "title": "The Query Schema",
+73               "default": "",
+74               "examples": [
+75                 "url"
+76               ],
+77               "pattern": "^(.*)$"
+78             },
+79             "archive": {
+80               "$id": "#/properties/meta/properties/uris/properties/archive",
+81               "type": "string",
+82               "title": "The Archive Schema",
+83               "default": "",
+84               "examples": [
+85                 "url"
+86               ],
+87               "pattern": "^(.*)$"
+88             },
+89             "code": {
+90               "$id": "#/properties/meta/properties/uris/properties/code",
+91               "type": "string",
+92               "title": "The Code Schema",
+93               "default": "",
+94               "examples": [
+95                 "url"
+96               ],
+97               "pattern": "^(.*)$"
+98             },
+99             "selfDesc": {
+100               "$id": "#/properties/meta/properties/uris/properties/selfDesc",
+101               "type": "string",
+102               "title": "The Selfdesc Schema",
+103               "default": "",
+104               "examples": [
+105                 "url"
+106               ],
+107               "pattern": "^(.*)$"
+108             }
+109           }
+110         },
+111         "contributors": {
+112           "$id": "#/properties/meta/properties/contributors",
+113           "type": "object",
+114           "title": "The Contributors Schema",
+115           "required": [
+116             "metadataAuthor",
+117             "digitized"
+118           ],
+119           "properties": {
+120             "metadataAuthor": {
+121               "$id": "#/properties/meta/properties/contributors/properties/metadataAuthor",
+122               "type": "string",
+123               "title": "The Metadataauthor Schema",
+124               "default": "",
+125               "examples": [
+126                 ""
+127               ],
+128               "pattern": "^(.*)$"
+129             },
+130             "digitized": {
+131               "$id": "#/properties/meta/properties/contributors/properties/digitized",
+132               "type": "string",
+133               "title": "The Digitized Schema",
+134               "default": "",
+135               "examples": [
+136                 ""
+137               ],
+138               "pattern": "^(.*)$"
+139             }
+140           }
+141         },
+142         "legal": {
+143           "$id": "#/properties/meta/properties/legal",
+144           "type": "object",
+145           "title": "The Legal Schema",
+146           "required": [
+147             "images",
+148             "text"
+149           ],
+150           "properties": {
+151             "images": {
+152               "$id": "#/properties/meta/properties/legal/properties/images",
+153               "type": "object",
+154               "title": "The Images Schema",
+155               "required": [
+156                 "creator",
+157                 "license"
+158               ],
+159               "properties": {
+160                 "creator": {
+161                   "$id": "#/properties/meta/properties/legal/properties/images/properties/creator",
+162                   "type": "string",
+163                   "title": "The Creator Schema",
+164                   "default": "",
+165                   "examples": [
+166                     "string"
+167                   ],
+168                   "pattern": "^(.*)$"
+169                 },
+170                 "license": {
+171                   "$id": "#/properties/meta/properties/legal/properties/images/properties/license",
+172                   "type": "string",
+173                   "title": "The License Schema",
+174                   "default": "",
+175                   "examples": [
+176                     "vocab?"
+177                   ],
+178                   "pattern": "^(.*)$"
+179                 }
+180               }
+181             },
+182             "text": {
+183               "$id": "#/properties/meta/properties/legal/properties/text",
+184               "type": "object",
+185               "title": "The Text Schema",
+186               "required": [
+187                 "creator",
+188                 "license"
+189               ],
+190               "properties": {
+191                 "creator": {
+192                   "$id": "#/properties/meta/properties/legal/properties/text/properties/creator",
+193                   "type": "string",
+194                   "title": "The Creator Schema",
+195                   "default": "",
+196                   "examples": [
+197                     "string"
+198                   ],
+199                   "pattern": "^(.*)$"
+200                 },
+201                 "license": {
+202                   "$id": "#/properties/meta/properties/legal/properties/text/properties/license",
+203                   "type": "string",
+204                   "title": "The License Schema",
+205                   "default": "",
+206                   "examples": [
+207                     "vocab?"
+208                   ],
+209                   "pattern": "^(.*)$"
+210                 }
+211               }
+212             }
+213           }
+214         },
+215         "abstract": {
+216           "$id": "#/properties/meta/properties/abstract",
+217           "type": "object",
+218           "title": "The Abstract Schema"
+219         },
+220         "datatypes": {
+221           "$id": "#/properties/meta/properties/datatypes",
+222           "type": "array",
+223           "title": "The Datatypes Schema",
+224           "items": {
+225             "$id": "#/properties/meta/properties/datatypes/items",
+226             "type": "string",
+227             "title": "The Items Schema",
+228             "default": "",
+229             "examples": [
+230               "MIME types",
+231               "string",
+232               "relational data",
+233               "geo"
+234             ],
+235             "pattern": "^(.*)$"
+236           }
+237         },
+238         "producedWith": {
+239           "$id": "#/properties/meta/properties/producedWith",
+240           "type": "string",
+241           "title": "The Producedwith Schema",
+242           "default": "",
+243           "examples": [
+244             "string"
+245           ],
+246           "pattern": "^(.*)$"
+247         }
+248       }
+249     },
+250     "content": {
+251       "$id": "#/properties/content",
+252       "type": "object",
+253       "title": "The Content Schema",
+254       "required": [
+255         "period",
+256         "disciplines",
+257         "entityTypes",
+258         "linguisticInformation"
+259       ],
+260       "properties": {
+261         "period": {
+262           "$id": "#/properties/content/properties/period",
+263           "type": "object",
+264           "title": "The Period Schema",
+265           "required": [
+266             "creation",
+267             "digitization",
+268             "Translation"
+269           ],
+270           "properties": {
+271             "creation": {
+272               "$id": "#/properties/content/properties/period/properties/creation",
+273               "type": "array",
+274               "title": "The Creation Schema",
+275               "items": {
+276                 "$id": "#/properties/content/properties/period/properties/creation/items",
+277                 "type": "string",
+278                 "title": "The Items Schema",
+279                 "default": "",
+280                 "examples": [
+281                   "ISO8601 String"
+282                 ],
+283                 "pattern": "^(.*)$"
+284               }
+285             },
+286             "digitization": {
+287               "$id": "#/properties/content/properties/period/properties/digitization",
+288               "type": "array",
+289               "title": "The Digitization Schema",
+290               "items": {
+291                 "$id": "#/properties/content/properties/period/properties/digitization/items",
+292                 "type": "string",
+293                 "title": "The Items Schema",
+294                 "default": "",
+295                 "examples": [
+296                   "ISO8601 String"
+297                 ],
+298                 "pattern": "^(.*)$"
+299               }
+300             },
+301             "Translation": {
+302               "$id": "#/properties/content/properties/period/properties/Translation",
+303               "type": "array",
+304               "title": "The Translation Schema",
+305               "items": {
+306                 "$id": "#/properties/content/properties/period/properties/Translation/items",
+307                 "type": "string",
+308                 "title": "The Items Schema",
+309                 "default": "",
+310                 "examples": [
+311                   "ISO8601 String"
+312                 ],
+313                 "pattern": "^(.*)$"
+314               }
+315             }
+316           }
+317         },
+318         "disciplines": {
+319           "$id": "#/properties/content/properties/disciplines",
+320           "type": "array",
+321           "title": "The Disciplines Schema",
+322           "items": {
+323             "$id": "#/properties/content/properties/disciplines/items",
+324             "type": "string",
+325             "title": "The Items Schema",
+326             "default": "",
+327             "examples": [
+328               "ÖFOS URI"
+329             ],
+330             "pattern": "^(.*)$"
+331           }
+332         },
+333         "entityTypes": {
+334           "$id": "#/properties/content/properties/entityTypes",
+335           "type": "object",
+336           "title": "The Entitytypes Schema",
+337           "required": [
+338             "Person",
+339             "Place",
+340             "PhysicalObject",
+341             "Event",
+342             "Organization"
+343           ],
+344           "properties": {
+345             "Person": {
+346               "$id": "#/properties/content/properties/entityTypes/properties/Person",
+347               "type": "object",
+348               "title": "The Person Schema",
+349               "required": [
+350                 "instanceCount",
+351                 "vocab",
+352                 "description"
+353               ],
+354               "properties": {
+355                 "instanceCount": {
+356                   "$id": "#/properties/content/properties/entityTypes/properties/Person/properties/instanceCount",
+357                   "type": "string",
+358                   "title": "The Instancecount Schema",
+359                   "default": "",
+360                   "examples": [
+361                     "Number"
+362                   ],
+363                   "pattern": "^(.*)$"
+364                 },
+365                 "vocab": {
+366                   "$id": "#/properties/content/properties/entityTypes/properties/Person/properties/vocab",
+367                   "type": "array",
+368                   "title": "The Vocab Schema",
+369                   "items": {
+370                     "$id": "#/properties/content/properties/entityTypes/properties/Person/properties/vocab/items",
+371                     "type": "string",
+372                     "title": "The Items Schema",
+373                     "default": "",
+374                     "examples": [
+375                       "url"
+376                     ],
+377                     "pattern": "^(.*)$"
+378                   }
+379                 },
+380                 "description": {
+381                   "$id": "#/properties/content/properties/entityTypes/properties/Person/properties/description",
+382                   "type": "string",
+383                   "title": "The Description Schema",
+384                   "default": "",
+385                   "examples": [
+386                     "String"
+387                   ],
+388                   "pattern": "^(.*)$"
+389                 }
+390               }
+391             },
+392             "Place": {
+393               "$id": "#/properties/content/properties/entityTypes/properties/Place",
+394               "type": "object",
+395               "title": "The Place Schema",
+396               "required": [
+397                 "instanceCount",
+398                 "vocab",
+399                 "description"
+400               ],
+401               "properties": {
+402                 "instanceCount": {
+403                   "$id": "#/properties/content/properties/entityTypes/properties/Place/properties/instanceCount",
+404                   "type": "string",
+405                   "title": "The Instancecount Schema",
+406                   "default": "",
+407                   "examples": [
+408                     "Number"
+409                   ],
+410                   "pattern": "^(.*)$"
+411                 },
+412                 "vocab": {
+413                   "$id": "#/properties/content/properties/entityTypes/properties/Place/properties/vocab",
+414                   "type": "array",
+415                   "title": "The Vocab Schema",
+416                   "items": {
+417                     "$id": "#/properties/content/properties/entityTypes/properties/Place/properties/vocab/items",
+418                     "type": "string",
+419                     "title": "The Items Schema",
+420                     "default": "",
+421                     "examples": [
+422                       "url"
+423                     ],
+424                     "pattern": "^(.*)$"
+425                   }
+426                 },
+427                 "description": {
+428                   "$id": "#/properties/content/properties/entityTypes/properties/Place/properties/description",
+429                   "type": "string",
+430                   "title": "The Description Schema",
+431                   "default": "",
+432                   "examples": [
+433                     "String"
+434                   ],
+435                   "pattern": "^(.*)$"
+436                 }
+437               }
+438             },
+439             "PhysicalObject": {
+440               "$id": "#/properties/content/properties/entityTypes/properties/PhysicalObject",
+441               "type": "object",
+442               "title": "The Physicalobject Schema",
+443               "required": [
+444                 "instanceCount",
+445                 "vocab",
+446                 "description"
+447               ],
+448               "properties": {
+449                 "instanceCount": {
+450                   "$id": "#/properties/content/properties/entityTypes/properties/PhysicalObject/properties/instanceCount",
+451                   "type": "string",
+452                   "title": "The Instancecount Schema",
+453                   "default": "",
+454                   "examples": [
+455                     "Number"
+456                   ],
+457                   "pattern": "^(.*)$"
+458                 },
+459                 "vocab": {
+460                   "$id": "#/properties/content/properties/entityTypes/properties/PhysicalObject/properties/vocab",
+461                   "type": "array",
+462                   "title": "The Vocab Schema",
+463                   "items": {
+464                     "$id": "#/properties/content/properties/entityTypes/properties/PhysicalObject/properties/vocab/items",
+465                     "type": "string",
+466                     "title": "The Items Schema",
+467                     "default": "",
+468                     "examples": [
+469                       "url"
+470                     ],
+471                     "pattern": "^(.*)$"
+472                   }
+473                 },
+474                 "description": {
+475                   "$id": "#/properties/content/properties/entityTypes/properties/PhysicalObject/properties/description",
+476                   "type": "string",
+477                   "title": "The Description Schema",
+478                   "default": "",
+479                   "examples": [
+480                     "String"
+481                   ],
+482                   "pattern": "^(.*)$"
+483                 }
+484               }
+485             },
+486             "Event": {
+487               "$id": "#/properties/content/properties/entityTypes/properties/Event",
+488               "type": "object",
+489               "title": "The Event Schema",
+490               "required": [
+491                 "instanceCount",
+492                 "vocab",
+493                 "description"
+494               ],
+495               "properties": {
+496                 "instanceCount": {
+497                   "$id": "#/properties/content/properties/entityTypes/properties/Event/properties/instanceCount",
+498                   "type": "string",
+499                   "title": "The Instancecount Schema",
+500                   "default": "",
+501                   "examples": [
+502                     "Number"
+503                   ],
+504                   "pattern": "^(.*)$"
+505                 },
+506                 "vocab": {
+507                   "$id": "#/properties/content/properties/entityTypes/properties/Event/properties/vocab",
+508                   "type": "array",
+509                   "title": "The Vocab Schema",
+510                   "items": {
+511                     "$id": "#/properties/content/properties/entityTypes/properties/Event/properties/vocab/items",
+512                     "type": "string",
+513                     "title": "The Items Schema",
+514                     "default": "",
+515                     "examples": [
+516                       "url"
+517                     ],
+518                     "pattern": "^(.*)$"
+519                   }
+520                 },
+521                 "description": {
+522                   "$id": "#/properties/content/properties/entityTypes/properties/Event/properties/description",
+523                   "type": "string",
+524                   "title": "The Description Schema",
+525                   "default": "",
+526                   "examples": [
+527                     "String"
+528                   ],
+529                   "pattern": "^(.*)$"
+530                 }
+531               }
+532             },
+533             "Organization": {
+534               "$id": "#/properties/content/properties/entityTypes/properties/Organization",
+535               "type": "object",
+536               "title": "The Organization Schema",
+537               "required": [
+538                 "instanceCount",
+539                 "vocab",
+540                 "description"
+541               ],
+542               "properties": {
+543                 "instanceCount": {
+544                   "$id": "#/properties/content/properties/entityTypes/properties/Organization/properties/instanceCount",
+545                   "type": "string",
+546                   "title": "The Instancecount Schema",
+547                   "default": "",
+548                   "examples": [
+549                     "Number"
+550                   ],
+551                   "pattern": "^(.*)$"
+552                 },
+553                 "vocab": {
+554                   "$id": "#/properties/content/properties/entityTypes/properties/Organization/properties/vocab",
+555                   "type": "array",
+556                   "title": "The Vocab Schema",
+557                   "items": {
+558                     "$id": "#/properties/content/properties/entityTypes/properties/Organization/properties/vocab/items",
+559                     "type": "string",
+560                     "title": "The Items Schema",
+561                     "default": "",
+562                     "examples": [
+563                       "url"
+564                     ],
+565                     "pattern": "^(.*)$"
+566                   }
+567                 },
+568                 "description": {
+569                   "$id": "#/properties/content/properties/entityTypes/properties/Organization/properties/description",
+570                   "type": "string",
+571                   "title": "The Description Schema",
+572                   "default": "",
+573                   "examples": [
+574                     "String"
+575                   ],
+576                   "pattern": "^(.*)$"
+577                 }
+578               }
+579             }
+580           }
+581         },
+582         "linguisticInformation": {
+583           "$id": "#/properties/content/properties/linguisticInformation",
+584           "type": "object",
+585           "title": "The Linguisticinformation Schema",
+586           "required": [
+587             "POS",
+588             "NER",
+589             "tokenization"
+590           ],
+591           "properties": {
+592             "POS": {
+593               "$id": "#/properties/content/properties/linguisticInformation/properties/POS",
+594               "type": "object",
+595               "title": "The Pos Schema",
+596               "required": [
+597                 "instanceCount"
+598               ],
+599               "properties": {
+600                 "instanceCount": {
+601                   "$id": "#/properties/content/properties/linguisticInformation/properties/POS/properties/instanceCount",
+602                   "type": "string",
+603                   "title": "The Instancecount Schema",
+604                   "default": "",
+605                   "examples": [
+606                     "Number"
+607                   ],
+608                   "pattern": "^(.*)$"
+609                 }
+610               }
+611             },
+612             "NER": {
+613               "$id": "#/properties/content/properties/linguisticInformation/properties/NER",
+614               "type": "object",
+615               "title": "The Ner Schema",
+616               "required": [
+617                 "instanceCount"
+618               ],
+619               "properties": {
+620                 "instanceCount": {
+621                   "$id": "#/properties/content/properties/linguisticInformation/properties/NER/properties/instanceCount",
+622                   "type": "string",
+623                   "title": "The Instancecount Schema",
+624                   "default": "",
+625                   "examples": [
+626                     "Number"
+627                   ],
+628                   "pattern": "^(.*)$"
+629                 }
+630               }
+631             },
+632             "tokenization": {
+633               "$id": "#/properties/content/properties/linguisticInformation/properties/tokenization",
+634               "type": "object",
+635               "title": "The Tokenization Schema",
+636               "required": [
+637                 "instanceCount"
+638               ],
+639               "properties": {
+640                 "instanceCount": {
+641                   "$id": "#/properties/content/properties/linguisticInformation/properties/tokenization/properties/instanceCount",
+642                   "type": "string",
+643                   "title": "The Instancecount Schema",
+644                   "default": "",
+645                   "examples": [
+646                     "Number"
+647                   ],
+648                   "pattern": "^(.*)$"
+649                 }
+650               }
+651             }
+652           }
+653         }
+654       }
+655     }
+656   }
+657 }
