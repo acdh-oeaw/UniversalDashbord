@@ -1,0 +1,68 @@
+{
+  "meta": {
+    "title": "APIS",
+    "ID": "7442",
+     "appType": "database",
+    "abstract": "Web application to collect, curate, enrich, analyze, visualize, and export prosopgraphical and biographical data. It is developed in the context of the APIS-Project. It contains data from the Austrian Biographical Dictionary (Österreichisches Biograpisches Lexikon / ÖBL).",
+    "uris": {
+      "selfDesc": "",
+      "baseUri": "https://apis.acdh.oeaw.ac.at",
+      "query": "",
+      "archive": "",
+      "code": "https://github.com/acdh-oeaw/apis"
+    },
+    "Contributors": [{
+        "acdh:hasFirstName": "Christine",
+        "acdh:hasLastName": "Gruber",
+        "acdh:hasIdentifier": "!https://id.acdh.oeaw.ac.at/cgruber!",
+        "acdh:hasRole": ["meta-project-management"]
+      },
+      {
+        "acdh:hasFirstName": "Matthias",
+        "acdh:hasLastName": "Schlögl",
+        "acdh:hasIdentifier": "!https://id.acdh.oeaw.ac.at/mschloegl!",
+        "acdh:hasRole": "programming"
+      }
+    ]
+
+  },
+  "content": {
+    "period": {
+      "temporalCoverage": ["1815/1950"],
+      "creationOfCHO": ["1975/2018"],
+      "collection": ["2004-04-28/2017-11-30"],
+      "creationOfApplication": ["2015/2019"]
+    },
+    "disciplines": ["oefos:601022", "oefos:605007"],
+    "entities": [
+      {
+        "type": "acdh:Person",
+        "instanceCount": "",
+        "distinctValues": "28488",
+        "vocab": ["https://apis.acdh.oeaw.ac.at/entities/entity/person/list/"],
+        "description": "String"
+      },
+      {
+        "type": "acdh:Place",
+        "instanceCount": "",
+        "distinctValues": "17539",
+        "vocab": ["https://apis.acdh.oeaw.ac.at/entities/entity/place/list/"],
+        "description": "String"
+      },
+      {
+        "type": "acdh:Event",
+        "instanceCount": "",
+        "distinctValues": "33",
+        "vocab": ["https://apis.acdh.oeaw.ac.at/entities/entity/event/list/"],
+        "description": "String"
+      },
+      {
+        "type": "acdh:Organization",
+        "instanceCount": "",
+        "distinctValues": "1907",
+        "vocab": ["https://apis.acdh.oeaw.ac.at/entities/entity/institution/list/"],
+        "description": "String"
+      }
+    ]
+  }
+}
