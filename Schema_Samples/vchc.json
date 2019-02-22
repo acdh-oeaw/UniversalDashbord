@@ -1,0 +1,51 @@
+{
+  "meta": {
+    "title": "WKS Rest API",
+    "ID": "7608",
+    "abstract": "",
+    "uris": {
+      "selfDesc": "",
+      "baseUri": "https://vchc.univie.ac.at/db/#/",
+      "query": "https://wksgoose.acdh-dev.oeaw.ac.at/api/v1/",
+      "code": "https://github.com/ctot-nondef/wks_rest"
+    },
+    "Contributors": [{
+        "acdh:hasFirstName": "Christoph",
+        "acdh:hasLastName": "Hoffmann",
+        "acdh:hasIdentifier": "https://id.acdh.oeaw.ac.at/choffmann",
+        "acdh:hasRole": ["development"]
+      },
+      {
+        "acdh:hasFirstName": "Barbara",
+        "acdh:hasLastName": "Krautgartner",
+        "acdh:hasIdentifier": "https://id.acdh.oeaw.ac.at/bkrautgartner",
+        "acdh:hasRole": "programming"
+      }
+    ]
+
+  },
+  "content": {
+    "period": {
+      "creationOfCHO": ["1700/1945"],
+      "collection": ["2017-01-01/2019-12-12"],
+      "creationOfApplication": ["2017/2019"]
+    },
+    "disciplines": ["oefos:605002"],
+    "entities": [{
+        "type": "acdh:Person",
+        "instanceCount": "3103",
+        "distinctValues": "3103",
+        "vocab": ["https://wksgoose.acdh-dev.oeaw.ac.at/api/v1/actor/"],
+        "description": "String"
+      },
+      {
+        "type": "acdh:Keyword",
+        "instanceCount": "1360",
+        "distinctValues": "1360",
+        "vocab": ["https://wksgoose.acdh-dev.oeaw.ac.at/api/v1/descriptor/"
+        ],
+        "description": "String"
+      }
+    ]
+  }
+}
