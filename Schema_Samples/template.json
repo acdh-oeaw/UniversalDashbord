@@ -25,7 +25,8 @@
     },
     "abstract":{},
     "datatypes":["MIME types", "string", "relational data", "geo"],
-    "producedWith":"string"
+    "producedWith":"string",
+    "relatedServices":"tbd"
   },
   "content": {
     "period": {
