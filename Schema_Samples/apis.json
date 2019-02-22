@@ -37,30 +37,37 @@
     "entities": [
       {
         "type": "acdh:Person",
-        "instanceCount": "",
+        "instanceCount": "28488",
         "distinctValues": "28488",
         "vocab": ["https://apis.acdh.oeaw.ac.at/entities/entity/person/list/"],
         "description": "String"
       },
       {
         "type": "acdh:Place",
-        "instanceCount": "",
+        "instanceCount": "17539",
         "distinctValues": "17539",
         "vocab": ["https://apis.acdh.oeaw.ac.at/entities/entity/place/list/"],
         "description": "String"
       },
       {
         "type": "acdh:Event",
-        "instanceCount": "",
+        "instanceCount": "33",
         "distinctValues": "33",
         "vocab": ["https://apis.acdh.oeaw.ac.at/entities/entity/event/list/"],
         "description": "String"
       },
       {
         "type": "acdh:Organization",
-        "instanceCount": "",
+        "instanceCount": "1907",
         "distinctValues": "1907",
         "vocab": ["https://apis.acdh.oeaw.ac.at/entities/entity/institution/list/"],
+        "description": "String"
+      },
+      {
+        "type": "acdh:Man-Made-Object",
+        "instanceCount": "1114",
+        "distinctValues": "1114",
+        "vocab": ["https://apis.acdh.oeaw.ac.at/entities/entity/work/list/"],
         "description": "String"
       }
     ]
