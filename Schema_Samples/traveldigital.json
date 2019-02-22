@@ -2,7 +2,6 @@
   "meta": {
     "title": "travel!digital",
     "ID": "11740",
-    "appType": "digital-edtion",
     "abstract": "Digital edition application providing access to a digital collection of early German travel guides on non-European countries which were released by the Baedeker publishing house between 1875 and 1914. The collection consists of the travel!digital Corpus (XML/TEI transcriptions of first editions (5 volumes) including structural, semantic and linguistic annotations), the travel!digital Facsimiles (scans and photographs of the historical prints), the travel!digital Auxiliary Files (a TEI schema of the annotations applied in the corpus, and a list of term labels for indexing names of persons annotated in the corpus), and the travel!digital Thesaurus (a SKOS vocabulary covering designations of groups and selected sights annotated in the corpus). The collection was created within the GO!DIGITAL 1.0 project \"travel!digital. Exploring People and Monuments in Baedeker Guidebooks (1875-1914)\", Project-Nr.: ÖAW0204. Image creation was done in 2004 at the Austrian Academy of Sciences (AAC-Austrian Academy Corpus). ",
     "uris": {
       "selfDesc": "",
@@ -11,25 +10,32 @@
       "archive": "https://id.acdh.oeaw.ac.at/traveldigital",
       "code": "https://github.com/acdh-oeaw/cr-xq-mets/tree/resourcefragments_liposuction"
     },
-    "Contributors": 
-      [   {"acdh:hasFirstName":"Kiki",
-                       "acdh:hasLastName":"Czeitschner", 
-                       "acdh:hasIdentifier":"https://id.acdh.oeaw.ac.at/uczeitschner",
-                       "acdh:hasRole":["meta-project-management","annotating"]},
-          {"acdh:hasFirstName":"Barbara",
-                       "acdh:hasLastName":"Krautgartner", 
-                       "acdh:hasIdentifier":"https://id.acdh.oeaw.ac.at/bkrautgartner",
-                       "acdh:hasRole":"programming"},
-          {"acdh:hasFirstName":"Omar",
-                       "acdh:hasLastName":"Siam", 
-                       "acdh:hasIdentifier":"https://id.acdh.oeaw.ac.at/osiam",
-                       "acdh:hasRole":"programming"},
-          {"acdh:hasFirstName":"Matej",
-                       "acdh:hasLastName":"Durco", 
-                       "acdh:hasIdentifier":"https://orcid.org/0000-0002-5274-8278",
-                       "acdh:hasRole":"programming"}
-     ]
-      
+    "Contributors": [{
+        "acdh:hasFirstName": "Kiki",
+        "acdh:hasLastName": "Czeitschner",
+        "acdh:hasIdentifier": "https://id.acdh.oeaw.ac.at/uczeitschner",
+        "acdh:hasRole": ["meta-project-management", "annotating"]
+      },
+      {
+        "acdh:hasFirstName": "Barbara",
+        "acdh:hasLastName": "Krautgartner",
+        "acdh:hasIdentifier": "https://id.acdh.oeaw.ac.at/bkrautgartner",
+        "acdh:hasRole": "programming"
+      },
+      {
+        "acdh:hasFirstName": "Omar",
+        "acdh:hasLastName": "Siam",
+        "acdh:hasIdentifier": "https://id.acdh.oeaw.ac.at/osiam",
+        "acdh:hasRole": "programming"
+      },
+      {
+        "acdh:hasFirstName": "Matej",
+        "acdh:hasLastName": "Durco",
+        "acdh:hasIdentifier": "https://orcid.org/0000-0002-5274-8278",
+        "acdh:hasRole": "programming"
+      }
+    ]
+
   },
   "content": {
     "period": {
@@ -38,24 +44,27 @@
       "creationOfApplication": ["2016/2018"]
     },
     "disciplines": ["oefos:605002", "oefos:605007"],
-    "entities": [
-       { "type": "acdh:word",
+    "entities": [{
+        "type": "acdh:word",
         "instanceCount": "1106885",
         "distinctValues": "94235",
         "vocab": ["https://traveldigital.sisyphos.arz.oeaw.ac.at/exist/apps/cr-xq-mets/baedeker/fcs?operation=scan&x-format=json&x-context=baedeker&x-filter=&sort=size&scanClause=w&responsePosition=0"],
         "description": "String"
       },
-      { "type": "acdh:pos",
+      {
+        "type": "acdh:pos",
         "instanceCount": "1210827",
         "distinctValues": "78",
         "vocab": ["https://traveldigital.sisyphos.arz.oeaw.ac.at/exist/apps/cr-xq-mets/baedeker/fcs?operation=scan&x-format=json&x-context=baedeker&x-filter=&sort=size&scanClause=pos&responsePosition=0"],
         "description": "String"
       },
-      { "type": "acdh:Person",
+      {
+        "type": "acdh:Person",
         "instanceCount": "13385",
         "distinctValues": "5476",
-        "vocab": ["https://traveldigital.sisyphos.arz.oeaw.ac.at/exist/apps/cr-xq-mets/baedeker/fcs?operation=scan&x-format=json&x-context=baedeker&x-filter=&sort=size&scanClause=persnamehist&responsePosition=0","https://traveldigital.sisyphos.arz.oeaw.ac.at/exist/apps/cr-xq-mets/baedeker/fcs?operation=scan&x-format=json&x-context=baedeker&x-filter=&sort=size&scanClause=persnamerelmyth&responsePosition=0",
-"https://traveldigital.sisyphos.arz.oeaw.ac.at/exist/apps/cr-xq-mets/baedeker/fcs?operation=scan&x-format=json&x-context=baedeker&x-filter=&sort=size&scanClause=persnamelit&responsePosition=0"],
+        "vocab": ["https://traveldigital.sisyphos.arz.oeaw.ac.at/exist/apps/cr-xq-mets/baedeker/fcs?operation=scan&x-format=json&x-context=baedeker&x-filter=&sort=size&scanClause=persnamehist&responsePosition=0", "https://traveldigital.sisyphos.arz.oeaw.ac.at/exist/apps/cr-xq-mets/baedeker/fcs?operation=scan&x-format=json&x-context=baedeker&x-filter=&sort=size&scanClause=persnamerelmyth&responsePosition=0",
+          "https://traveldigital.sisyphos.arz.oeaw.ac.at/exist/apps/cr-xq-mets/baedeker/fcs?operation=scan&x-format=json&x-context=baedeker&x-filter=&sort=size&scanClause=persnamelit&responsePosition=0"
+        ],
         "description": "String"
       }
     ]

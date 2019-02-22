@@ -23,7 +23,7 @@
         "license":"vocab?"
       }
     },
-    "abstract":{},
+    "abstract":"",
     "datatypes":["MIME types", "string", "relational data", "geo"],
     "producedWith":"string",
     "relatedServices":"tbd"
