@@ -1,32 +1,34 @@
 {
   "meta": {
     "title": "string",
-    "ID":"redmine ID",
+    "ID": "redmine ID",
     "uris": {
       "baseUri": "url",
       "query": "url",
       "archive": "url",
       "code": "url",
-      "selfDesc":"url"
+      "selfDesc": "url"
     },
-    "contributors": {
-      "metadataAuthor": "",
-      "digitized": ""
-    },
-    "legal":{
-      "images":{
-        "creator":"string",
-        "license":"vocab?"
+    "contributors": [{
+      "acdh:hasFirstName": "String",
+      "acdh:hasLastName": "String",
+      "acdh:hasIdentifier": "uri",
+      "acdh:hasRole": ["string", "string"]
+    }],
+    "legal": {
+      "images": {
+        "creator": "string",
+        "license": "vocab?"
       },
-      "text":{
-        "creator":"string",
-        "license":"vocab?"
+      "text": {
+        "creator": "string",
+        "license": "vocab?"
       }
     },
-    "abstract":"",
-    "datatypes":["MIME types", "string", "relational data", "geo"],
-    "producedWith":"string",
-    "relatedServices":"tbd"
+    "abstract": "",
+    "datatypes": ["MIME types", "string", "relational data", "geo"],
+    "producedWith": "string",
+    "relatedServices": "tbd"
   },
   "content": {
     "period": {
@@ -35,43 +37,28 @@
       "Translation": ["ISO8601 String"]
     },
     "disciplines": ["ÖFOS URI"],
-    "entityTypes": {
-      "Person": {
-        "instanceCount": "Number",
-        "vocab": ["url"],
+    "entities": [{
+        "type": "acdh:word",
+        "instanceCount": "number",
+        "distinctValues": "number",
+        "vocab": ["uri"],
         "description": "String"
       },
-      "Place": {
-        "instanceCount": "Number",
-        "vocab": ["url"],
+      {
+        "type": "acdh:pos",
+        "instanceCount": "number",
+        "distinctValues": "number",
+        "vocab": ["uri"],
         "description": "String"
       },
-      "PhysicalObject": {
-        "instanceCount": "Number",
-        "vocab": ["url"],
-        "description": "String"
-      },
-      "Event": {
-        "instanceCount": "Number",
-        "vocab": ["url"],
-        "description": "String"
-      },
-      "Organization": {
-        "instanceCount": "Number",
-        "vocab": ["url"],
+      {
+        "type": "acdh:Person",
+        "instanceCount": "number",
+        "distinctValues": "number",
+        "vocab": ["uri"],
         "description": "String"
       }
-    },
-    "linguisticInformation": {
-      "POS": {
-        "instanceCount": "Number"
-      },
-			"NER": {
-        "instanceCount": "Number"
-      },
-			"tokenization": {
-        "instanceCount": "Number"
-      },
-    }
+    ]
   }
+}
 }
