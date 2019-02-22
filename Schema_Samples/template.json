@@ -21,8 +21,11 @@
       "text":{
         "creator":"string",
         "license":"vocab?"
-      },
-    }
+      }
+    },
+    "abstract":{},
+    "datatypes":["MIME types", "string", "relational data", "geo"],
+    "producedWith":"string"
   },
   "content": {
     "period": {
