@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<service>
+    <meta>
+        <ID></ID>
+        <title></title>
+        <abstract></abstract>
+        <uris>
+            <selfDesc></selfDesc>
+            <frontPage></frontPage>
+            <query></query>
+            <archive></archive>
+            <code></code>
+        </uris>
+        <respStmt>
+            <resp>metadata creation</resp>
+            <name ref=""/>
+        </respStmt>
+    </meta>
+    <content>
+        <!-- ~ EDM WebResource-->
+        <dataset>
+            <title><!-- to differentiate if there's more than one--></title>
+            <contributors>
+                <respStmt>
+                    <resp>digitization</resp>
+                    <name ref=""/>
+                </respStmt>
+            </contributors>
+            <disciplines>
+                <idno type="uri" subytpe="vocab">{ÖFOS URI}</idno>
+            </disciplines>
+            <listEvents>
+                <event type="digitization" when="{ISO8601}"/>
+                <event type="translation" when="{ISO8601}"/>
+            </listEvents>
+            <sourceDesc>
+                <!-- ~ EDM CHO level-->
+                <respStmt>
+                    <resp>creator</resp>
+                    <name ref=""/>
+                </respStmt>
+                <listEvents>
+                    <event type="creation" when="{ISO8601}"/>
+                </listEvents>
+            </sourceDesc>
+            <controlaccess><!-- stolen from EAD -->
+                <category name="Person" type="entity" searchable="true">
+                    <instanceCount></instanceCount>
+                    <idno type="uri" subtype="vocab">{}</idno>
+                    <desc></desc>
+                    <producedWith>
+                        <idno type="acdhID" subtype="service">{redmine-id of service}</idno>
+                        <idno type="uri" subtype="tool">{DHA Taxonomy URI}</idno>
+                        <!-- or -->
+                        <!-- free text if there is no formal description -->
+                    </producedWith>
+                </category>
+                <category name="Organization" type="entity" searchable="true">
+                    <instanceCount></instanceCount>
+                    <idno type="uri" subtype="vocab">{}</idno>
+                    <desc></desc>
+                </category>
+                <category name="Place">
+                    <instanceCount></instanceCount>
+                    <idno type="uri" subtype="vocab">{}</idno>
+                    <desc></desc>
+                </category>
+                <category name="physicalObject">
+                    <instanceCount></instanceCount>
+                    <idno type="uri" subtype="vocab">{}</idno>
+                    <desc></desc>
+                </category>
+                <category name="bibliographicObject">
+                    <instanceCount></instanceCount>
+                    <idno type="uri" subtype="vocab">{}</idno>
+                    <desc></desc>
+                </category>
+                <category name="Event">
+                    <instanceCount></instanceCount>
+                    <idno type="uri" subtype="vocab">{}</idno>
+                    <desc></desc>
+                </category>
+                
+                <pos searchable="false" category="linguistic">
+                    <instanceCount></instanceCount>
+                    <vocabs>
+                        <url></url>
+                    </vocabs>
+                    <description></description>
+                </pos>
+                <ner searchable="false" category="linguistic">
+                    <instanceCount></instanceCount>
+                    <vocabs>
+                        <url></url>
+                    </vocabs>
+                    <description></description>
+                    <producedWith>
+                        <url></url>
+                    </producedWith>
+                </ner>
+                <tokens searchable="false" category="linguistic">
+                    <instanceCount></instanceCount>
+                    <vocabs>
+                        <url></url>
+                    </vocabs>
+                    <description></description>
+                    <producedWith>
+                        <url></url>
+                    </producedWith>
+                </tokens>
+            </saspect>
+        </dataset>
+    </content>    
+</service>
