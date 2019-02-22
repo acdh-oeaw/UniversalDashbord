@@ -1,0 +1,61 @@
+{
+  "meta": {
+    "title": "string",
+    "uris": {
+      "baseUri": "url",
+      "query": "url",
+      "archive": "url",
+      "code": "url",
+    },
+    "Contributors": {
+      "metadataAuthor": "",
+      "digitized": ""
+    }
+  },
+  "content": {
+    "period": {
+      "creation": ["ISO8601 String"],
+      "digitization": ["ISO8601 String"],
+      "Translation": ["ISO8601 String"]
+    },
+    "disciplines": ["ÖFOS URI"],
+    "entityTypes": {
+      "Person": {
+        "instanceCount": "Number",
+        "vocab": ["url"],
+        "description": "String"
+      },
+      "Place": {
+        "instanceCount": "Number",
+        "vocab": ["url"],
+        "description": "String"
+      },
+      "PhysicalObject": {
+        "instanceCount": "Number",
+        "vocab": ["url"],
+        "description": "String"
+      },
+      "Event": {
+        "instanceCount": "Number",
+        "vocab": ["url"],
+        "description": "String"
+      },
+      "Organization": {
+        "instanceCount": "Number",
+        "vocab": ["url"],
+        "description": "String"
+      }
+    },
+    "linguisticInformation": {
+      "POS": {
+        "instanceCount": "Number"
+      },
+			"NER": {
+        "instanceCount": "Number"
+      },
+			"tokenization": {
+        "instanceCount": "Number"
+      },
+    }
+  }
+}
