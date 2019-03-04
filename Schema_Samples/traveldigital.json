@@ -50,22 +50,24 @@
         "type": "acdh:word",
         "instanceCount": "1106885",
         "distinctValues": "94235",
-        "vocab": ["https://traveldigital.sisyphos.arz.oeaw.ac.at/exist/apps/cr-xq-mets/baedeker/fcs?operation=scan&x-format=json&x-context=baedeker&x-filter=&sort=size&scanClause=w&responsePosition=0"],
+        "vocab": ["https://traveldigital.acdh.oeaw.ac.at/fcs?operation=scan&x-format=json&x-context=baedeker&x-filter=&sort=size&scanClause=w&responsePosition=0"],
         "description": "String"
       },
       {
         "type": "acdh:pos",
         "instanceCount": "1210827",
         "distinctValues": "78",
-        "vocab": ["https://traveldigital.sisyphos.arz.oeaw.ac.at/exist/apps/cr-xq-mets/baedeker/fcs?operation=scan&x-format=json&x-context=baedeker&x-filter=&sort=size&scanClause=pos&responsePosition=0"],
+        "vocab": ["https://traveldigital.acdh.oeaw.ac.at/fcs?operation=scan&x-format=json&x-context=baedeker&x-filter=&sort=size&scanClause=pos&responsePosition=0"],
         "description": "String"
       },
       {
         "type": "acdh:Person",
         "instanceCount": "13385",
         "distinctValues": "5476",
-        "vocab": ["https://traveldigital.sisyphos.arz.oeaw.ac.at/exist/apps/cr-xq-mets/baedeker/fcs?operation=scan&x-format=json&x-context=baedeker&x-filter=&sort=size&scanClause=persnamehist&responsePosition=0", "https://traveldigital.sisyphos.arz.oeaw.ac.at/exist/apps/cr-xq-mets/baedeker/fcs?operation=scan&x-format=json&x-context=baedeker&x-filter=&sort=size&scanClause=persnamerelmyth&responsePosition=0",
-          "https://traveldigital.sisyphos.arz.oeaw.ac.at/exist/apps/cr-xq-mets/baedeker/fcs?operation=scan&x-format=json&x-context=baedeker&x-filter=&sort=size&scanClause=persnamelit&responsePosition=0"
+        "vocab": [
+        "https://traveldigital.acdh.oeaw.ac.at/fcs?operation=scan&x-format=json&x-context=baedeker&x-filter=&sort=size&scanClause=persnamehist&responsePosition=0",
+        "https://traveldigital.acdh.oeaw.ac.at/fcs?operation=scan&x-format=json&x-context=baedeker&x-filter=&sort=size&scanClause=persnamerelmyth&responsePosition=0",
+        "https://traveldigital.acdh.oeaw.ac.at/fcs?operation=scan&x-format=json&x-context=baedeker&x-filter=&sort=size&scanClause=persnamelit&responsePosition=0"
         ],
         "description": "String"
       }
